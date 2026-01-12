@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Nama Mempelai</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* GANTI WARNA DI SINI */
+            --primary-color: #2e5c8e; /* Hijau Emerald Tua */
+            --accent-color: #ffffff;  /* Emas */
+            --bg-light: #3a45b0;      /* Putih Cream */
+            --text-dark: #010f12;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Great vibes', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            overflow-x: hidden;
+        }
+
+        /* Hero / Pembuka */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Alex Brush', cursive;
+            font-size: 5rem;
+            margin: 10px 0;
+            color: var(--accent-color);
+        }
+
+        /* Konten Utama */
+        section {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent-color);
+        }
+
+        h2 {
+            font-family: 'Alex Brush', cursive;
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .mempelai-name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+
+        /* Countdown Style */
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .count-box {
+            background: var(--primary-color);
+            color: var(--accent-color);
+            padding: 15px;
+            border-radius: 12px;
+            min-width: 65px;
+        }
+
+        .count-box span {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Tombol & Link */
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+            font-weight: 600;
+            border: 1px solid var(--accent-color);
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        footer {
+            padding: 50px;
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <p data-aos="fade-down">The Wedding Celebration of</p>
+        <h1 data-aos="zoom-in">DIMAS & DWI ZAHRO</h1>
+        <p data-aos="fade-up" style="letter-spacing: 3px;">20 . 05 . 2026</p>
+    </div>
+
+    <section>
+        <div class="card" data-aos="fade-up">
+            <h2>Mempelai</h2>
+            <div class="mempelai-name">DIMAS ARYANDI </div>
+            <p>Putra dari Bp. SADEWA & RATNA AJENG </p>
+            
+            <p style="font-family: 'Alex Brush'; font-size: 2.5rem; margin: 20px 0;">dengan</p>
+            
+            <div class="mempelai-name">DWI ZAHROTUNNISA</div>
+            <p>Putri dari Bp. AGUS & IBU MASITOH </p>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="font-size: 2.5rem;">Menuju Hari Bahagia</h2>
+        <div id="countdown" data-aos="flip-up">
+            <div class="count-box"><span id="days">00</span>Hari</div>
+            <div class="count-box"><span id="hours">00</span>Jam</div>
+            <div class="count-box"><span id="minutes">00</span>Menit</div>
+            <div class="count-box"><span id="seconds">00</span>Detik</div>
+        </div>
+        
+        <div class="card" data-aos="fade-up">
+            <h3 style="color: var(--primary-color);">Waktu & Tempat</h3>
+            <p><strong>Akad Nikah:</strong> 08.00 - 10.00 WIB</p>
+            <p><strong>Resepsi:</strong> 10.00 - 14.00 WIB</p>
+            <hr style="opacity: 0.2;">
+            <p><strong>Gedung Pertemuan Utama</strong><br>Jl. Sudirman No. 10, Jakarta Pusat</p>
+            <a href="https://maps.google.com" target="_blank" class="btn">LIHAT LOKASI</a>
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>Terima Kasih</p>
+        <small>© 2026 Nama Mempelai. All Rights Reserved.</small>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200 });
+
+        // Target Tanggal Pernikahan
+        const weddingDate = new Date("May 20, 2026 08:00:00").getTime();
+
+        const updateCountdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(updateCountdown);
+                document.getElementById("countdown").innerHTML = "ACARA SEDANG BERLANGSUNG";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
